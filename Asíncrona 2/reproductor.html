@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="./css/reproductor.css">
+    <title>Reproductor</title>
+</head>
+<body>
+    
+    <audio id="audio" src="" autoplay></audio>
+
+    <!-- Barra de progreso -->
+    <div class="audio-bar">
+        <div class="audio-bar-line" id="progress"></div>
+    </div>
+
+    <!-- Controles de reproducción -->
+    <div class="card">
+        Canción Actual:
+        <h1 id="txt_title"></h1>
+        <h3 id="txt_time"></h3>
+        <button onclick="prevItem()">Anterior</button>
+        <button onclick="togglePlayPause()">Play/Pause</button>
+        <button onclick="nextItem()">Siguiente</button>
+    </div>
+
+    <!-- Lista de Temas Dinámica -->
+    <div class="card playlist">
+        <ul id="playlist">
+            <!-- Las canciones se agregarán dinámicamente aquí -->
+        </ul>
+    </div>
+
+    <script src="./js/reproductor.js"></script>
+</body>
+</html>
