@@ -16,14 +16,14 @@
 }
 
 .header__img {
-    width: 300px;
-    padding-left: 20px;
+    width: 100px;
+   
 }
 
 .header__a {
     text-decoration: none;
     color: gray;
-    font-size: 30px;
+    font-size: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-right: 100px;
 }
@@ -32,6 +32,10 @@
     color: rgb(90, 111, 90);
     cursor: pointer;
     text-decoration: none;
+}
+
+.menu__img{
+    width: 50px;
 }
 
 /*-------------------
@@ -82,7 +86,7 @@
 }
 
 .footer__img {
-    width: 500px;
+    width: 150px;
     margin-top: 20%;
 }
 
