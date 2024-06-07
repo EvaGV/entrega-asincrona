@@ -1,5 +1,5 @@
 
-const cuadros = document.querySelectorAll(".cuadro"); // declara una variable llamada cuadros y la coge del html dentro de la class= cuadro
+const cuadros = document.querySelectorAll(".cuadro"); // declara una variable llamada cuadro y nos devuelve una serie de elementos
 const controles = document.querySelectorAll("input"); // coge los input de html y lo almacena en la variable controles
 const codigoColor = document.querySelector("p"); // coge los p de html y lo almacena en la variable codigoColor
 

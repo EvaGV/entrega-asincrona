@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../Documents/GitHub/entrega-asincrona"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "EjerciciosJS"
+	}
+}
