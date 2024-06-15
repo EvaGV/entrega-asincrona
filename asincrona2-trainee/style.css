@@ -1,0 +1,54 @@
+/* styles.css */
+body {
+    background-color: #1f1e1e;
+    color: #fff;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 90%; /* Ajuste del ancho para ocupar más espacio horizontal */
+}
+
+.row {
+    display: flex;
+    text-align: left;
+    width: 100%;
+    gap: 20px; /* Espacio entre las palabras */
+}
+
+.word {
+    font-size: 5em;
+    font-weight: bold;
+    display: flex;
+    align-items: baseline;
+}
+
+.word:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.image{
+    display: none;
+}
+
+.word__main {
+    margin-right: 10px;
+}
+
+.word__sub {
+    font-size: 0.2em;
+    font-style: italic;
+    font-weight: normal;
+    color: #ccc;
+}
+
