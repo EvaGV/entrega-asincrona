@@ -4,156 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Diseño de Ejemplo</title>
-
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #1f1e1e;
-            color: #fff;
-            font-family: 'Helvetica', 'Arial', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-            width: 90%;
-            /* Ajuste del ancho para ocupar más espacio horizontal */
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            text-align: left;
-            width: 100%;
-            gap: 20px;
-        }
-
-        .word {
-            font-size: 5em;
-            font-weight: bold;
-            display: flex;
-            align-items: baseline;
-            cursor: pointer;
-            
-        }
-
-        .word:hover {
-            opacity: 0.5;
-        }
-
-        .word__main {
-            margin-right: 10px;
-        }
-
-        .word__sub {
-            font-size: 0.2em;
-            font-style: italic;
-            font-weight: normal;
-            color: #ccc;
-        }
-
-        /* Contenedor para la imagen de fondo */
-        .background-image {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background-size: cover;
-            background-position: center;
-            transition: opacity 0.3s ease-in;
-        }
-
-        /* Media queries para pantallas pequeñas y dispositivos móviles */
-        @media (max-width: 768px) {
-            .word {
-                font-size: 2em;
-                flex: 1 1 100%;
-                /* Ocupar todo el ancho disponible en dispositivos móviles */
-                max-width: none;
-                /* Quitar el máximo ancho en dispositivos móviles */
-            }
-        }
-
-        /* Media queries para pantallas medianas */
-        @media (min-width: 769px) and (max-width: 1200px) {
-            .word {
-                font-size: 4em;
-            }
-        }
-
-       
-    </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="word">
-                <span class="word__main">ZPump Urban Fit</span>
-                <span class="word__sub">Reebok</span>
+    <main class="contenido">
+        <div class="fila">
+            <div class="botones">
+                <span class="palabra__main">ZPump Urban Fit</span>
+                <span class="palabra__sub">Reebok</span>
             </div>
-            <div class="word">
-                <span class="word__main">Coach2o</span>
-                <span class="word__sub">Font Vella</span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="word">
-                <span class="word__main">RCar</span>
-                <span class="word__sub">Revista Car</span>
-            </div>
-            <div class="word">
-                <span class="word__main">Emotional Pulse</span>
-                <span class="word__sub">Seidor</span>
+            <div class="botones">
+                <span class="palabra__main">Coach2o</span>
+                <span class="palabra__sub">Font Vella</span>
             </div>
         </div>
-        <div class="row">
-            <div class="word">
-                <span class="word__main">Alhambra</span>
-                <span class="word__sub">Cervezas Alhambra</span>
+        <div class="fila">
+            <div class="botones">
+                <span class="palabra__main">RCar</span>
+                <span class="palabra__sub">Revista Car</span>
             </div>
-            <div class="word">
-                <span class="word__main">Actimel</span>
-                <span class="word__sub">Danone</span>
-            </div>
-            <div class="word">
-                <span class="word__main">ffuusss</span>
-                <span class="word__sub">OTYS Group</span>
+            <div class="botones">
+                <span class="palabra__main">Emotional Pulse</span>
+                <span class="palabra__sub">Seidor</span>
             </div>
         </div>
-        <div class="row">
-            <div class="word">
-                <span class="word__main">Delicious</span>
-                <span class="word__sub">Día</span>
+        <div class="fila">
+            <div class="botones">
+                <span class="palabra__main">Alhambra</span>
+                <span class="palabra__sub">Cervezas Alhambra</span>
             </div>
-            <div class="word">
-                <span class="word__main">Roca</span>
-                <span class="word__sub">Sanitarios</span>
+            <div class="botones">
+                <span class="palabra__main">Actimel</span>
+                <span class="palabra__sub">Danone</span>
             </div>
-            <div class="word">
-                <span class="word__main">Deep State</span>
-                <span class="word__sub">Fox</span>
+            <div class="botones">
+                <span class="palabra__main">ffuusss</span>
+                <span class="palabra__sub">OTS Group</span>
             </div>
         </div>
-    </div>
+        <div class="fila">
+            <div class="botones">
+                <span class="palabra__main">Delicious</span>
+                <span class="palabra__sub">Día</span>
+            </div>
+            <div class="botones">
+                <span class="palabra__main">Roca</span>
+                <span class="palabra__sub">Sanitarios</span>
+            </div>
+            <div class="botones">
+                <span class="palabra__main">Deep State</span>
+                <span class="palabra__sub">Fox</span>
+            </div>
+        </div>
+    </main>
 
-    <!-- Contenedor oculto para la imagen de fondo -->
-    <div class="background-image"></div>
+    
+    <div class="backgroundImage"></div>
 
     <script>
         // Obtener todas las palabras
