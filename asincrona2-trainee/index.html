@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Diseño de Ejemplo</title>
+    <title>Trainee</title>
 </head>
 
 <body>
     <main class="contenido">
+        
         <div class="fila">
             <div class="botones">
                 <span class="palabra__main">ZPump Urban Fit</span>
@@ -20,6 +21,7 @@
                 <span class="palabra__sub">Font Vella</span>
             </div>
         </div>
+
         <div class="fila">
             <div class="botones">
                 <span class="palabra__main">RCar</span>
@@ -30,6 +32,7 @@
                 <span class="palabra__sub">Seidor</span>
             </div>
         </div>
+
         <div class="fila">
             <div class="botones">
                 <span class="palabra__main">Alhambra</span>
@@ -44,6 +47,7 @@
                 <span class="palabra__sub">OTS Group</span>
             </div>
         </div>
+
         <div class="fila">
             <div class="botones">
                 <span class="palabra__main">Delicious</span>
@@ -63,50 +67,8 @@
     
     <div class="backgroundImage"></div>
 
-    <script>
-        // Obtener todas las palabras
-        const words = document.querySelectorAll('.word');
 
-        // Imágenes correspondientes a cada palabra
-        const images = [
-            './img/img1.webp',
-            './img/img2.webp',
-            './img/img3.webp',
-            './img/img4.webp',
-            './img/img5.webp',
-            './img/img6.webp',
-            './img/img7.webp',
-            './img/img8.webp',
-            './img/img9.webp',
-            './img/img10.webp'
-        ];
-
-        // Contenedor de la imagen de fondo
-        const backgroundImage = document.querySelector('.background-image');
-
-        // Función para cambiar la imagen de fondo
-        function changeBackground(index) {
-            backgroundImage.style.opacity = 1; // Mostrar la imagen de fondo
-            backgroundImage.style.backgroundImage = `url(${images[index]})`;
-        }
-
-        // Añadir evento a cada palabra
-        words.forEach((word, index) => {
-            let isHovered = false;
-
-            word.addEventListener('mouseover', () => {
-                if (!isHovered) {
-                    isHovered = true;
-                    changeBackground(index);
-                }
-            });
-
-            word.addEventListener('mouseout', () => {
-                isHovered = false;
-                backgroundImage.style.opacity = 0; // Ocultar la imagen de fondo
-            });
-        });
-    </script>
+    <script src="script.js"> </script>
 
 </body>
 
