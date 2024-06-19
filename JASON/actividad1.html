@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas alumnos</title>
+    <style>
+        .tarjetas{
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+            margin: 5px;
+        }
+
+        .tarjeta h3{
+            font-size: large;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h3 id="contenedor">CARGANDO INFORMACIÓN</h3>
+
+
+    <script>
+   
+    const dataUsuarios= `[{
+    "nombre": "Juan Pérez",
+    "edad": 28,
+    "correo": "juan.perez@example.com"
+  },
+  {
+    "nombre": "Ana Gómez",
+    "edad": 34,
+    "correo": "ana.gomez@example.com"
+  },
+  {
+    "nombre": "Luis Torres",
+    "edad": 23,
+    "correo": "luis.torres@example.com"
+  }]`;
+  
+
+  const listaUsuarios = JSON.parse(dataUsuarios);
+
+  const divContenedor = document.querySelector("#contenedor");
+
+
+  listaUsuarios.forEach(usuario => {
+    divContenedor.innerHTML += `<div class="tarjetas">
+                                <h3>${usuario.nombre}</h3>
+                                <p>${usuario.edad}</p>
+                                <p>${usuario.correo}</p>
+                            </div>`;
+  });
+  
+    </script>
+</body>
+</html>
